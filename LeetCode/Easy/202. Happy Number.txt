@@ -1,0 +1,27 @@
+public class Solution {
+    public bool IsHappy(int n) {
+           int spaces = 0,x = n;
+            while (x > 0)
+            {
+                x = x / 10;
+                spaces++;
+            }
+            if (n == 1)
+            {
+                return true;
+            } else if (spaces == 1 && n < 7) {
+                return false;
+            }
+
+                // n =100 what happens
+                int sum = 0;
+                int remainder = 0;
+                while (spaces > 0) {
+                    spaces--;
+                    remainder = n % 10;
+                    n /= 10;
+                    sum += (remainder * remainder);
+                }
+                return IsHappy(sum);    
+    }
+}

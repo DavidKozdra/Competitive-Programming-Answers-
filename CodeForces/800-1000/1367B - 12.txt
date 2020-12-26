@@ -1,0 +1,20 @@
+"""
+amount of odds in wrong compared to evens
+answer is -1 if not equvilant or number of evens and odds in wrong
+"""
+
+testcases = int(input())
+for num in range(0, testcases):
+    size = int(input())
+    x = list(map(int, input().split()))
+    ew = ow = 0
+    for i in range(0, size):
+        if x[i] % 2 != i % 2:
+            if x[i] % 2 == 0:
+                ew += 1
+            else:
+                ow += 1
+    if ew == ow:
+        print(f'{ew}')
+    else:
+        print('-1')

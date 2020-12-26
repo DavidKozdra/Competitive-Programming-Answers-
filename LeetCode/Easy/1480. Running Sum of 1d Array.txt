@@ -1,0 +1,22 @@
+public class Solution {
+    public int[] RunningSum(int[] nums) {
+        int [] newnums = new int [nums.Length];
+        int [] tempnums = new int [nums.Length];
+        newnums[0]=nums[0];
+        for(int j =1; j < nums.Length; j++){
+            for(int i = 0; i <= j; i++){
+                 tempnums[i] = nums[i];
+            }   
+            newnums[j] = Sum(tempnums);
+        }       
+        return newnums;
+    }
+    
+    int Sum(int [] n){
+        int sum=0;
+        for(int i =0; i < n.Length; i++){
+            sum += n[i];    
+        }
+        return sum;
+    }
+}
