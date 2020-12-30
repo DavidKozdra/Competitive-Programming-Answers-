@@ -1,0 +1,30 @@
+
+	
+	/*
+	input : 3
+	Node : 1 -> 2 -> 3 -> 4 ->
+	
+	
+	get the length
+	subtract length by input to get index needed
+	forloop follower to index
+	*/
+	
+	//returns value of input away from the nth node 
+	private static int FromNth(int input, Node node){
+		Node Current = node;
+		
+		//find length
+		int length = 0;
+		while(Current.next != null){
+			Current = Current.next;
+			length ++;
+		}
+		Current = node; //refresh
+		for(int i = 0; i < length - input ; i++){
+			Current = Current.next;
+		}
+		
+		return Current.val;
+	}
+}

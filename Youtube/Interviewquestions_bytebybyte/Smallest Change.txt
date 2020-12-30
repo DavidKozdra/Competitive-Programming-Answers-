@@ -1,0 +1,30 @@
+	static void printList(List<int> values){
+		foreach(int item in values){
+			Console.WriteLine(item);
+		}
+	}
+	
+	static int MaxToSubtract(int [] values, int number){
+		int largestpossible = 0;
+		int smallestremaining = (number - values[0]);
+		for(int i = 0; i < values.Length; i++){
+			if((number - values[i]) < smallestremaining && (number - values[i]) >= 0){
+				smallestremaining = (number - values[i]);
+				if(i > largestpossible){
+					largestpossible = i;
+				}
+			}
+		}
+		return largestpossible;
+	}
+	
+	static List<int> MinimunmChange(int value){
+		int [] coins = {1,5,10,25};
+		int size = 0;
+		List<int> changegiven = new List<int>();
+		while(value != 0){
+			changegiven.Add(coins[MaxToSubtract(coins,value)]);
+			value -= coins[MaxToSubtract(coins,value)];
+		}
+		return changegiven;	
+	}

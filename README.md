@@ -4,22 +4,30 @@ Competitive programming answers from Leetcode, Online Judge, and code forces.
 
 # Code Forces 
 
-All of my noncompeditive proplems were deleted but the two that exist are in Python3
+All of my non-competitive problems were deleted, but the two that exist are in Python3.
 
-<a href = "https://codeforces.com/profile/davidkozdra"></a>
+"https://codeforces.com/profile/davidkozdra"
 
 # Leet Code 
-Some of my problems were deleted by the website and will be redone all of which are done in C#.
+Some of my problems were deleted by the website and will be redone, all of which are done in C#.
 
-<a href = "https://leetcode.com/"></a>
+"https://leetcode.com/"
 
 # Online Judge 
-This website doesnt save answers so they will all need to be redone :(  
+This website doesn't save answers, so they will all need to be redone :(  
 
-<a href = "https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3"></a>
+ "https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3"
+
+
+ #Youtube 
+
+ Please note that for these problems, though they are linked to solutions most of the time, if not every time I followed my own solution usually separate from the presenters.
+
+ https://www.youtube.com/watch?v=6W_Fve7qIe4&list=PLNmW52ef0uwsjnM06LweaYEZr-wjPKBnj&index=7
+
 
 # Programming Byte By Byte
 
-These are problems I developed to challenge my fellow students through our Student Publication
+These are problems I developed to challenge my fellow students through our Student Publication.
 
-<a href = "https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3"></a>
+ "https://onlinejudge.org/index.php?option=com_comprofiler&Itemid=3"
